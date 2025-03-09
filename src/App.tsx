@@ -5,6 +5,7 @@ import "./App.css";
 
 function App() {
   const [count, setCount] = useState(0);
+  const name = import.meta.env.VITE_APP_NAME;
 
   return (
     <>
@@ -22,6 +23,7 @@ function App() {
         <p>
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>
+        <p>{name}</p>
       </div>
       <p className="read-the-docs">Click on the Vite and React logos to learn more</p>
     </>
